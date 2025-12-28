@@ -2886,6 +2886,16 @@
 		)
 		(uuid "b3fd3580-e4d5-45ed-8def-a41dd7ee8cb2")
 	)
+	(text "Sonde e Sensori Caldaia"
+		(exclude_from_sim no)
+		(at 199.39 189.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c7c08e1e-b030-4871-8e3a-c94ecc705650")
+	)
 	(text "Pompa riscaldamento on"
 		(exclude_from_sim no)
 		(at 265.684 113.538 0)
@@ -2915,6 +2925,16 @@
 			)
 		)
 		(uuid "cbfad2b9-e9f9-4739-bb28-a9d47f2ab5d9")
+	)
+	(text "28/12/2025"
+		(exclude_from_sim no)
+		(at 213.36 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cd995ba9-3674-4d93-ada8-5dd2cf7d2af8")
 	)
 	(text "Pompa H2O"
 		(exclude_from_sim no)
