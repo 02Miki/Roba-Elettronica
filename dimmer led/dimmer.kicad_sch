@@ -2724,7 +2724,7 @@
 	)
 	(text "2"
 		(exclude_from_sim no)
-		(at 53.34 49.53 0)
+		(at 60.96 52.324 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2734,7 +2734,7 @@
 	)
 	(text "3"
 		(exclude_from_sim no)
-		(at 60.452 44.45 0)
+		(at 68.326 47.244 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2792,9 +2792,19 @@
 		)
 		(uuid "977f6f7d-8505-45ae-a740-7e9f412a08f3")
 	)
+	(text "Funziona perché per chiudere il mosfet (IRLZ44N),\n i 12v devono fare \"fatica\", quindi se sia il mosfet \nche il transistor sono chiusi, i 12v preferiscono \"andare\"\n nel transistor (2N2222), dove la fatica la fanno i 3v dell'esp"
+		(exclude_from_sim no)
+		(at 102.108 18.288 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b1387fad-5b56-4379-8199-0985feca7249")
+	)
 	(text "1"
 		(exclude_from_sim no)
-		(at 60.452 52.07 0)
+		(at 68.326 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
