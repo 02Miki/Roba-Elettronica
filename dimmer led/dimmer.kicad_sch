@@ -2732,6 +2732,16 @@
 		)
 		(uuid "1ca9176b-2da3-40c9-95f4-bc70a24014b6")
 	)
+	(text "La resistenza da 1000 serve \nper evitare che il transistor\nsi frigga. Si usa da 1000 perché\nun valore più alto dissiperebbe \nmeno energia ma renderebbe i led meno\nreattivi allo spegnimento/accensione,\nmentre un valore più basso brucerebbe \npiù energia (vedere LTspice)"
+		(exclude_from_sim no)
+		(at 33.274 48.514 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3001f9fc-ddc0-405f-ae15-451bf8aa171c")
+	)
 	(text "3"
 		(exclude_from_sim no)
 		(at 68.326 47.244 0)
@@ -2782,6 +2792,16 @@
 		)
 		(uuid "92e20797-58f8-418d-a03c-f4a1c44a9c1c")
 	)
+	(text "La resistenza da 100 Ohm\nserve a non far arrivare \ntroppa potenza al transistor\nche non sa gestirla, mentre\nla resistenza (anche se è solo\nda 1/4 W) regge meglio i picchi"
+		(exclude_from_sim no)
+		(at 32.258 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "95fb026e-4fe3-49dd-9674-260c5d0030ea")
+	)
 	(text "Alimentatore"
 		(exclude_from_sim no)
 		(at 156.21 24.638 0)
@@ -2814,7 +2834,7 @@
 	)
 	(text "G = Gate\nD = Drain\nS = Source\nQuando il gate è attivo, \ndrain e source sono collegati,\nfacendo si che i led si accendano"
 		(exclude_from_sim no)
-		(at 33.274 22.606 0)
+		(at 32.004 19.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2835,16 +2855,16 @@
 		(uuid "414ec93f-248e-48c3-aa32-3a4ffb1bb28c")
 	)
 	(junction
-		(at 81.28 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6bd3d384-ee91-485d-b0c3-43abac92a846")
-	)
-	(junction
 		(at 160.02 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d28c650-7df6-4e4a-b71f-eb3b5545485b")
+	)
+	(junction
+		(at 78.74 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87360082-4756-4e9a-ac2d-e8d7f6b91a5d")
 	)
 	(junction
 		(at 153.67 27.94)
@@ -2860,7 +2880,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 41.91) (xy 81.28 41.91)
+			(xy 67.31 41.91) (xy 78.74 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2870,7 +2890,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 87.63) (xy 49.53 76.2)
+			(xy 53.34 87.63) (xy 53.34 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2887,16 +2907,6 @@
 			(type default)
 		)
 		(uuid "1ab58f9b-0b07-44f1-ab9b-5e8b1f10101d")
-	)
-	(wire
-		(pts
-			(xy 81.28 69.85) (xy 82.55 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c176801-b0aa-4ce4-96c0-40526af81e1d")
 	)
 	(wire
 		(pts
@@ -3010,7 +3020,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 87.63) (xy 110.49 87.63)
+			(xy 53.34 87.63) (xy 110.49 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3020,7 +3030,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 68.58) (xy 49.53 50.8)
+			(xy 53.34 68.58) (xy 53.34 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3030,7 +3040,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 50.8) (xy 59.69 50.8)
+			(xy 53.34 50.8) (xy 59.69 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3110,13 +3120,23 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 38.1) (xy 81.28 41.91)
+			(xy 78.74 38.1) (xy 78.74 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5a4c7753-6e46-4f76-aca5-c6be9e2b0e94")
+	)
+	(wire
+		(pts
+			(xy 78.74 69.85) (xy 82.55 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e234142-4ea7-48e0-991d-345c18a96a9c")
 	)
 	(wire
 		(pts
@@ -3130,7 +3150,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 25.4) (xy 125.73 25.4)
+			(xy 78.74 58.42) (xy 78.74 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "622516e8-1113-4b1b-a9b2-2e43d6a357a2")
+	)
+	(wire
+		(pts
+			(xy 78.74 25.4) (xy 125.73 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3217,6 +3247,16 @@
 			(type default)
 		)
 		(uuid "a0c4130b-6119-4284-b126-7180824bdd78")
+	)
+	(wire
+		(pts
+			(xy 78.74 41.91) (xy 78.74 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3871a52-e842-49a8-8edd-171412821fb9")
 	)
 	(wire
 		(pts
@@ -3340,7 +3380,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 30.48) (xy 81.28 25.4)
+			(xy 78.74 30.48) (xy 78.74 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3357,16 +3397,6 @@
 			(type default)
 		)
 		(uuid "f949cf23-9ed7-4875-866a-2a97c91c71fd")
-	)
-	(wire
-		(pts
-			(xy 81.28 41.91) (xy 81.28 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbb06cf8-210c-4297-83e7-c84aea3124b5")
 	)
 	(wire
 		(pts
@@ -3388,7 +3418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07e43ca5-f95c-41ab-b269-ea202f92dc0d")
-		(property "Reference" "R1 200 Ohm"
+		(property "Reference" "R1 200 Ohm1"
 			(at 251.46 137.1599 0)
 			(effects
 				(font
@@ -3442,7 +3472,7 @@
 		(instances
 			(project ""
 				(path "/d5a61ab2-807f-4680-8873-8278cdf034f6"
-					(reference "R1 200 Ohm")
+					(reference "R1 200 Ohm1")
 					(unit 1)
 				)
 			)
@@ -4149,16 +4179,16 @@
 	)
 	(symbol
 		(lib_id "encoder_rotativo:R_US")
-		(at 49.53 72.39 0)
+		(at 78.74 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "64b022f5-914c-46e5-8688-576fc32e581d")
-		(property "Reference" "R"
-			(at 52.07 71.1199 0)
+		(uuid "628044a3-256b-47c4-bdc9-78d8a2411c75")
+		(property "Reference" "R3"
+			(at 81.28 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4166,8 +4196,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470 Ohm"
-			(at 52.07 73.6599 0)
+		(property "Value" "100 Ohm"
+			(at 81.28 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4176,7 +4206,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.546 72.644 90)
+			(at 79.756 54.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4185,7 +4215,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 72.39 0)
+			(at 78.74 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4194,7 +4224,77 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 49.53 72.39 0)
+			(at 78.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0330ee3d-6253-4be8-808f-ef57d2009cc8")
+		)
+		(pin "2"
+			(uuid "235130a9-8f12-44d1-912c-d4251f538219")
+		)
+		(instances
+			(project "dimmer"
+				(path "/d5a61ab2-807f-4680-8873-8278cdf034f6"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "encoder_rotativo:R_US")
+		(at 53.34 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64b022f5-914c-46e5-8688-576fc32e581d")
+		(property "Reference" "R1"
+			(at 55.88 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470 Ohm"
+			(at 55.88 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.356 72.644 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 53.34 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4211,7 +4311,7 @@
 		(instances
 			(project "dimmer"
 				(path "/d5a61ab2-807f-4680-8873-8278cdf034f6"
-					(reference "R")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4372,7 +4472,7 @@
 	)
 	(symbol
 		(lib_id "encoder_rotativo:R_US")
-		(at 81.28 34.29 0)
+		(at 78.74 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4381,7 +4481,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e20e83e-1c82-46c5-be71-34bf0cd89794")
 		(property "Reference" "R2"
-			(at 83.82 33.0199 0)
+			(at 81.28 33.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4390,7 +4490,7 @@
 			)
 		)
 		(property "Value" "1k Ohm"
-			(at 83.82 35.5599 0)
+			(at 81.28 35.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4399,7 +4499,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.296 34.544 90)
+			(at 79.756 34.544 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4408,7 +4508,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 34.29 0)
+			(at 78.74 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4417,7 +4517,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 81.28 34.29 0)
+			(at 78.74 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4782,7 +4882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed2676d4-f12d-448a-916d-eac28835e797")
-		(property "Reference" "R1 10k Ohm"
+		(property "Reference" "R1 10k Ohm1"
 			(at 232.4099 128.27 0)
 			(effects
 				(font
@@ -4836,7 +4936,7 @@
 		(instances
 			(project "prova"
 				(path "/d5a61ab2-807f-4680-8873-8278cdf034f6"
-					(reference "R1 10k Ohm")
+					(reference "R1 10k Ohm1")
 					(unit 1)
 				)
 			)
